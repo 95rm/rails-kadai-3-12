@@ -1,2 +1,16 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<body>
+
+ <h2>Book was successfully created.</h2>
+
+ <p class="title">
+  <strong>title:</strong><%= @book.title %>
+ </p>
+
+ <p class="body">
+  <strong>body:</strong><%= @book.body %>
+ </p>
+
+ <a class="edit" href="/">Edit</a>
+ <a class="back" href="/new">Back</a>
+
+</body>
