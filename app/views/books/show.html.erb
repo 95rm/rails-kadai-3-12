@@ -1,5 +1,5 @@
 <body>
-
+ <%= flash[:notice] %>
  <h2>Book was successfully created.</h2>
 
  <p class="title">
@@ -10,7 +10,7 @@
   <strong>body:</strong><%= @book.body %>
  </p>
 
- <a class="edit" href="/">Edit</a>
- <a class="back" href="/new">Back</a>
+ <%= link_to "Edit", book_edit_path(@book.id) %>
+ <a class="back" href="/books">Back</a>
 
 </body>
