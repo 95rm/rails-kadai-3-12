@@ -7,7 +7,7 @@ class BooksController < ApplicationController
        redirect_to book_path(@book.id)
     else
        @books = Book.all
-       flash[:notice] = "投稿に失敗しました"
+       flash[:notice] = "Failed to post"
        render :index
     end
   end
@@ -46,3 +46,5 @@ class BooksController < ApplicationController
     params.require(:book).permit(:title, :body)
   end
 end
+
+
